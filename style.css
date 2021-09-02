@@ -1,0 +1,810 @@
+/* Setup snippet */
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+figcaption,
+figure,
+main {
+  display: block;
+}
+figure {
+  margin: 1em 40px;
+}
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+b,
+strong {
+  font-weight: inherit;
+}
+b,
+strong {
+  font-weight: bolder;
+}
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+dfn {
+  font-style: italic;
+}
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+audio,
+video {
+  display: inline-block;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+img {
+  border-style: none;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+button,
+input {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+progress {
+  display: inline-block;
+  vertical-align: baseline;
+}
+textarea {
+  overflow: auto;
+}
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+details,
+menu {
+  display: block;
+}
+summary {
+  display: list-item;
+}
+canvas {
+  display: inline-block;
+}
+template {
+  display: none;
+}
+[hidden] {
+  display: none;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: "";
+  clear: both;
+  height: 0;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* -------------------------
+Typography
+---------------------------- */
+/* *****************
+Some font sizes have been increased for accessibility and styling reasons
+******************** */
+
+/* font-family: "Cabin", sans-serif;
+  font-family: "Great Vibes", cursive; */
+
+html {
+  font-size: 125%;
+}
+
+body {
+  font-family: "Cabin", sans-serif;
+  font-size: 20px;
+  line-height: 29px;
+}
+
+.brandTitle {
+  font-family: "Great Vibes", cursive;
+  font-size: 42px;
+}
+
+nav ul {
+  font-family: "Cabin", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+h1 {
+  font-family: "Cabin", sans-serif;
+  font-size: 24px;
+  line-height: 1.15;
+}
+
+h1 span {
+  font-family: "Great Vibes", cursive;
+  font-size: 100px;
+  font-weight: initial;
+}
+
+h2 {
+  font-family: "Great Vibes", cursive;
+  font-size: 42px;
+  font-weight: normal;
+}
+
+.btn {
+  font-family: "Cabin", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbarLinks ul {
+  font-family: "Cabin", sans-serif;
+  font-size: 20px;
+  line-height: 29px;
+}
+
+.moreInfo ul {
+  font-family: "Cabin", sans-serif;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.tipsAndRecipesText h3 {
+  font-size: 28px;
+}
+
+/* -------------------------
+General
+---------------------------- */
+body {
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
+.navbarLinks ul,
+.moreInfo ul,
+.imageGallery ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbarLinks li,
+.moreInfo li,
+.imageGallery li,
+.contact li {
+  list-style: none;
+}
+
+h3,
+p {
+  margin: 0;
+}
+
+.btn {
+  text-decoration: none;
+  background: #fdc800;
+  color: #232323;
+  padding: 0.8rem 2.1rem;
+}
+
+.btn:focus,
+.btn:hover {
+  background: #232323;
+  color: #fdc800;
+}
+
+.contactInfo,
+.pages,
+.recentPosts,
+.contactForm {
+  text-align: left;
+  color: #f8f8f8;
+}
+
+.contactInfo ul,
+.pages ul,
+.recentPosts ul,
+.stayTuned ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* -------------------------
+Header
+---------------------------- */
+header {
+  background-image: url(https://psd.hackeryou.com/assignment1-assets/tasty/asset-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-bottom: 25%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 5%;
+}
+
+.navbarLinks a {
+  text-decoration: none;
+  padding: 1rem;
+  display: block;
+  color: #232323;
+}
+
+.navbarLinks a:focus,
+.navbarLinks a:hover {
+  color: #fdc800;
+}
+
+.welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-top: 15%;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 2rem;
+}
+
+.socials i {
+  padding: 0.4rem;
+  color: #fdc800;
+}
+
+.socials i:focus,
+.socials i:hover {
+  color: #232323;
+}
+
+h1 {
+  text-align: center;
+}
+
+h1 span {
+  display: block;
+}
+
+.hamurgerMenu {
+  display: none;
+}
+
+/* -------------------------
+.about section
+---------------------------- */
+.about {
+  background: #eaedf4;
+}
+
+.textContainer {
+  text-align: center;
+  margin: 0 auto;
+  padding: 8%;
+}
+
+.textContainer h2 {
+  margin: 0;
+}
+
+.textContainer p {
+  margin: 40px;
+}
+
+.moreInfo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #232323;
+  padding: 50px 100px;
+}
+
+.moreInfo a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  color: #f8f8f8;
+  padding: 2rem;
+}
+
+.moreInfo a:hover,
+.moreInfo a:focus {
+  color: #fdc800;
+}
+
+.moreInfo a i {
+  display: block;
+  padding-bottom: 1rem;
+}
+
+/* -------------------------
+.imageGallery section
+---------------------------- */
+.imageGallery {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.imageGallery img {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+/* -------------------------
+.tipsAndRecipes section
+---------------------------- */
+.tipsAndRecipesContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #eaedf4;
+}
+
+.tipsAndRecipesText {
+  width: 100%;
+  text-align: center;
+}
+
+.tipsAndRecipesText h3 {
+  padding-bottom: 5%;
+}
+
+.tipsAndRecipesText p {
+  padding-bottom: 1.5rem;
+}
+
+.tips {
+  padding: 3% 5% 3% 20%;
+}
+
+.recipes {
+  padding: 3% 20% 3% 5%;
+}
+
+.imgContainer {
+  width: 100%;
+}
+
+.imgContainer img {
+  width: 100%;
+  display: block;
+}
+
+/* -------------------------
+.meetTheCook section
+---------------------------- */
+.meetTheCook {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5% 10%;
+}
+
+.cookHeadshot {
+  margin-right: 5%;
+  width: 40%;
+}
+
+.cookHeadshot img {
+  width: 100%;
+}
+
+.cookInfo {
+  width: 100%;
+}
+
+.cookInfo p {
+  padding-bottom: 5%;
+}
+
+/* -------------------------
+Footer
+---------------------------- */
+footer h3,
+p {
+  margin-bottom: 0.3rem;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: #232323;
+  padding: 50px 20px;
+}
+
+.contact a:focus,
+.contact a:hover {
+  color: #fdc800;
+}
+
+.contactInfo,
+.pages,
+.recentPosts,
+.stayTuned {
+  margin-right: 5%;
+}
+
+.contactInfo a,
+.pages a,
+.recentPosts a,
+.stayTuned a {
+  text-decoration: none;
+  color: #f8f8f8;
+}
+
+.contactForm {
+  width: 40%;
+}
+
+.contactForm form {
+  display: flex;
+  align-items: center;
+}
+.contactForm input {
+  border: none;
+  text-align: left;
+}
+
+.contactForm input[type="email"] {
+  padding: 0.8rem;
+  width: 100%;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+  background: #a3a3a3;
+  color: #f8f8f8;
+}
+
+/* -------------------------
+.copyright p
+---------------------------- */
+.copyright {
+  background: #000000;
+  color: #808080;
+  text-align: center;
+  margin: 0;
+}
+
+/* -------------------------
+Media Queries
+---------------------------- */
+
+/* Portrait tablet and small desktops */
+@media (max-width: 965px) {
+  /* .tipsAndRecipes section */
+  .tipsAndRecipesContainer {
+    flex-direction: column;
+  }
+
+  .reversed {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .tips,
+  .recipes {
+    text-align: center;
+  }
+
+  .tips {
+    padding: 10%;
+  }
+
+  .recipes {
+    padding: 10%;
+  }
+
+  /* .meetTheCook section */
+  .meetTheCook {
+    flex-direction: column;
+  }
+
+  .cookHeadshot {
+    margin: 0;
+  }
+
+  .cookInfo {
+    text-align: center;
+    /* in the png file text is aligned right. Changed for stylistic reasons */
+  }
+
+  /* Footer */
+  .contact {
+    flex-direction: column;
+    padding: 50px 100px;
+  }
+
+  .contact :nth-child(4) {
+    order: 1;
+  }
+  .contact :nth-child(1) {
+    order: 2;
+  }
+  .contact :nth-child(3) {
+    order: 4;
+  }
+  .contact :nth-child(2) {
+    order: 3;
+  }
+
+  .recentPosts {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  .contactForm {
+    text-align: center;
+    width: 100%;
+  }
+
+  .contactForm form {
+    flex-direction: column;
+  }
+
+  .contactForm form input {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contactForm input[type="email"] {
+    margin-bottom: 1%;
+  }
+
+  .contactInfo {
+    text-align: center;
+    margin: 4% 0 0 0;
+  }
+
+  .pages {
+    text-align: center;
+    margin: 4% 0 0 0;
+  }
+
+  .pages ul {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .pages ul :nth-child(1) {
+    order: 1;
+  }
+
+  .pages ul :nth-child(2) {
+    order: 2;
+  }
+  .pages ul :nth-child(3) {
+    order: 3;
+  }
+  .pages ul :nth-child(4) {
+    order: 4;
+  }
+
+  .pages li {
+    margin-right: 0.5%;
+  }
+
+  .pages a {
+    border-right: 2px solid #f8f8f8;
+    padding: 0 0.5rem;
+  }
+
+  .contactInfo li {
+    display: inline-block;
+  }
+
+  .contactInfo li:nth-child(1)::after {
+    content: ", ";
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  /* Header */
+  nav {
+    padding-top: 30px;
+  }
+
+  .navbarLinks {
+    display: none;
+  }
+
+  .hamurgerMenu {
+    display: block;
+  }
+
+  .hamurgerMenu i:hover,
+  .hamurgerMenu i:focus {
+    color: #fdc800;
+    cursor: pointer;
+  }
+
+  .socials {
+    display: none;
+  }
+
+  /* .imageGallery section */
+  .imageGallery,
+  .imageGallery img {
+    padding: 0;
+  }
+  .imageGallery li:last-child {
+    display: none;
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  /* Header */
+  .brandTitle {
+    font-size: 30px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  h1 span {
+    font-size: 60px;
+  }
+  /* .about section */
+  .moreInfo ul {
+    flex-direction: column;
+  }
+}
